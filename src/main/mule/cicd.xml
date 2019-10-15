@@ -10,6 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="cicdFlow" doc:id="241cea3e-c113-4c86-af22-0de27d9bd036" >
 		<http:listener doc:name="Listener" doc:id="036f543e-c47e-4d9e-92c3-d0b5001b6bd1" config-ref="HTTP_Listener_config" path="/jenkins"/>
 		<set-payload value="Hello..." doc:name="Set Payload" doc:id="82ad8bb8-08fe-4d9b-be89-9bb03554b5ff" />
+		<set-payload value="Good Evening...." doc:name="Set Payload" doc:id="b59a17d4-ff66-4171-a2d2-66ab2f583180" />
 		<logger level="INFO" doc:name="Logger" doc:id="4a89a935-8cac-4463-b7ce-fa8c688d9fc6" message="Logger End ......"/>
 	</flow>
 </mule>
